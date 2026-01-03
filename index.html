@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">">
+  <meta name="description" content="Portofolio pribadi Rainanda Alghaisani - informasi diri, keterampilan, pengalaman, dan contoh karya.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portofolio Rainanda Alghaisani">
+  <meta property="og:description" content="Portofolio pribadi: proyek, pengalaman, dan kontak.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/images/profile-og.png">
+
+  <title>Portofolio — Rainanda Alghaisani</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/rainanda.jpeg"  alt="Foto Rainanda Alghaisani mengenakan kemeja biru, tersenyum menghadap kamera" class="profile-pic">
+      <h1 id="site-title">Rainanda Alghaisani</h1>
+      <p class="lead">Mahasiswa Informatika — pengembang front-end & penggemar aksesibilitas web.</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Hoby</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#education">Riwayat</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="Kumpulan Tugas/lat_css.html">Tugas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Tentang Saya</h2>
+      <article>
+        <p tabindex="0" id="short-bio">Halo! Saya Rainanda, mahasiswa jurusan Informatika yang tertarik pada pengembangan web, UI/UX, dan praktik aksesibilitas. Saya suka membuat antarmuka yang bersih, responsif, dan dapat diakses oleh semua orang.</p>
+        <aside aria-label="Informasi singkat" class="profile-aside">
+          <h3>Detail</h3>
+          <p><strong>Nama:</strong> Rainanda Alghaisani</p>
+          <p><strong>NIM:</strong> 2510614032</p>
+          <p><strong>Kelas:</strong> 25A1</p>
+          <p><strong>Pendidikan:</strong> <abbr title="Bachelor of Science">B.Sc.</abbr> Kandidat</p>
+          <p>Terakhir diperbarui: <time datetime="2025-12-01">1 Desember 2025</time></p>
+        </aside>
+      </article>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Hoby</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Daftar</h3>
+          <ul>
+            <li>Sepak Bola</li>
+            <li>Futsal</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Deskripsi</h3>
+          <dl>
+            <dt>Hoby sepak bola dari sejak kecil</dt>
+            <dd>Hoby futsal ketika SMP karena ketika SMP tidak ada ekskul sepak bola</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projek & Karya</h2>
+
+      <article class="project">
+        <h3>Portofolio Web (ini)</h3>
+        <p></p>
+        <a href="" ></a>
+        <p id="proj1-desc" class="sr-only">Link membuka di tab baru.</p>
+        <figure>
+          <img src="images/freecode.jpeg" alt="Saya sebagai mahasiswa informatika"/>
+          <figcaption>Tangkapan layar portofolio.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <h3>Projek Ini Dibuat Untuk Memenuhi Tugas Pemrograman</h3>
+        <p>Dengan Tugas Ini Saya Dapat Mengamalkan Ilmu Yang Telah Diajarkan</p>
+      
+        <p><a href="" target="_blank" rel="noopener">Kode sumber</a></p>
+      </article>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Riwayat Pendidikan</h2>
+      <table aria-describedby="education-desc">
+        <caption>Riwayat Pendidikan</caption>
+        <thead>
+          <tr>
+            <th>SDN 2 Cipari</th>
+            <th>SMP Terpadu Dadali Dinillah</th>
+            <th>SMA Terpadu Dadali Dinillah</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2013 - 2019</td>
+            <td>2019 - 2022</td>
+            <td>2022 - 2025</td>
+          </tr>
+          <tr>
+            <td>2013 - 2019</td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>Komunitas DevLocal</td>
+            <td>Kontributor Dokumentasi</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" id="education-desc"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Kontak</h2>
+
+      <form action="#" method="post" novalidate aria-labelledby="contact-heading">
+        <fieldset>
+          <legend>Form Kontak</legend>
+
+          <label for="name">Nama lengkap</label>
+          <input id="name" name="name" type="text" required minlength="3" maxlength="100" aria-describedby="name-help">
+          <small id="name-help">Masukkan nama lengkap (minimal 3 karakter).</small>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-describedby="email-help">
+          <small id="email-help">Contoh: nama@domain.com</small>
+
+          <label for="phone">Nomor Telepon</label>
+          <input id="phone" name="phone" type="tel" pattern="[0-9+\- ]{7,15}" minlength="7" maxlength="15" required aria-describedby="phone-help">
+          <small id="phone-help">Angka saja, 7-15 karakter.</small>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" aria-describedby="message-help"></textarea>
+          <small id="message-help">Tulis pesan singkat, minimal 10 karakter.</small>
+
+          <fieldset>
+            <legend>Pilih jenis pesan</legend>
+            <label><input type="radio" name="type" value="saran" required> Saran</label>
+            <label><input type="radio" name="type" value="pertanyaan"> Pertanyaan</label>
+          </fieldset>
+
+          <label><input type="checkbox" id="consent" name="consent" required> Saya menyetujui untuk dihubungi kembali.</label>
+
+          <button type="submit">Kirim</button>
+        </fieldset>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Rainanda Alghaisani — <a href="#contact">Hubungi</a></p>
+  </footer>
+</body>
+</html>

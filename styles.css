@@ -1,0 +1,312 @@
+/* =====================
+   RESET & BASE
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+/* =====================
+   LAYOUT UTILITIES
+===================== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #fff;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+#site-title {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+}
+
+.lead {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+nav {
+  background-color: #1e40af;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #dbeafe;
+}
+
+/* =====================
+   MAIN SECTIONS
+===================== */
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  background: #ffffff;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+  border-bottom: 3px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+/* =====================
+   ABOUT
+===================== */
+#about article {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.profile-aside {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.profile-aside h3 {
+  margin-top: 0;
+}
+
+/* =====================
+   SKILLS / HOBY
+===================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skills-grid h3 {
+  margin-top: 0;
+  color: #1e40af;
+}
+
+/* =====================
+   PROJECTS
+===================== */
+.project {
+  border-left: 4px solid #2563eb;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project figure {
+  margin: 1rem 0 0;
+}
+
+.project figcaption {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* =====================
+   TABLE (EDUCATION)
+===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+caption {
+  caption-side: bottom;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+thead {
+  background-color: #eff6ff;
+  font-weight: 600;
+}
+
+/* =====================
+   FORM (CONTACT)
+===================== */
+form {
+  max-width: 600px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+small {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111827;
+  color: #9ca3af;
+}
+
+footer a {
+  color: #93c5fd;
+}
+
+/* =====================
+   ACCESSIBILITY
+===================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  #about article {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+}
